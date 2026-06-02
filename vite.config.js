@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Forza Vite ad usare percorsi assoluti dalla root, fondamentale per i domini personalizzati
-  base: '/', 
+  // Usa percorsi relativi per compatibilità con GitHub Pages (repo path)
+  base: './',
 });
