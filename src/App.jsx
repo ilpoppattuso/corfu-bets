@@ -25,17 +25,19 @@ import {
 // ----------------------------------------------------------------------
 // Configurazione Firebase e Inizializzazione
 // ----------------------------------------------------------------------
-const firebaseConfig = typeof __firebase_config !== 'undefined'
-  ? JSON.parse(__firebase_config)
-  : {
-      apiKey: "",
-      authDomain: "corfu-bets.firebaseapp.com",
-      projectId: "corfu-bets",
-      storageBucket: "corfu-bets.appspot.com",
-      messagingSenderId: "",
-      appId: ""
-    };
+// Import the functions you need from the SDKs you need
 
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBrHDgr3EAZk8SXzO2pl9L11syZeotZb4k",
+  authDomain: "corfu-bets.firebaseapp.com",
+  projectId: "corfu-bets",
+  storageBucket: "corfu-bets.firebasestorage.app",
+  messagingSenderId: "138211240806",
+  appId: "1:138211240806:web:af30a2edbc8014c47776a7"
+};
+
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
